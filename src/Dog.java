@@ -7,8 +7,43 @@ public class Dog {
     private String species;
     private boolean isVac;
 
-    private Dog() {
+    private Dog(Builder builder) {
+        this.name = builder.name;
+        this.age = builder.age;
+        this.species = builder.species;
+        this.isVac = builder.isVac;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
+    public boolean isVac() {
+        return isVac;
+    }
+
+    public void setVac(boolean vac) {
+        isVac = vac;
     }
 
     public class Builder {
