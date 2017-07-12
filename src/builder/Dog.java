@@ -1,3 +1,5 @@
+package builder;
+
 /**
  * Created by Lenovo on 12.07.2017.
  */
@@ -46,7 +48,7 @@ public class Dog {
         isVac = vac;
     }
 
-    public class Builder {
+    public static class Builder {
         private String name; // to wymagne jest
         private int age;
         private String species;
